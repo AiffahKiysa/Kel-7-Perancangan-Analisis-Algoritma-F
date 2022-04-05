@@ -30,15 +30,15 @@ int JobScheduling(Job arr[], int n)
 	
 	for (int i=0; i<n; i++)
 	{
-    	for (int j=min(n, arr[i].deadline)-1; j>=0; j--)
-    	{
-    		if (slot[j]==false)
-    		{
-    			hasil += arr[i].profit;
-    			slot[j] = true;
-    			break;
-    		}
-    	}
+		for (int j=min(n, arr[i].deadline)-1; j>=0; j--)
+		{
+			if (slot[j]==false)
+			{
+				hasil += arr[i].profit;
+				slot[j] = true;
+				break;
+			}
+		}
 	}
     return hasil;
 }
