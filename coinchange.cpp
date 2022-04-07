@@ -22,12 +22,6 @@ long getNumberOfWays(long N, vector<long> Coins)
 	return ways[N];
 }
 
-void printArray(vector<long> coins)
-{
-	for(long i : coins)
-		cout << i << "\n";
-}
-
 int main()
 {
     int goal;
